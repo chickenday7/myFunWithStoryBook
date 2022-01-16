@@ -1,0 +1,42 @@
+.title{
+  margin: 0;
+}
+.selectedOption{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+}
+.availableOptions{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid black;
+  border-top: none;
+  width: 200px;
+}
+
+.itemOption{
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px solid black;
+  &:nth-last-child(1){
+    border-bottom: none;
+  }
+  &:hover{
+    background: red;
+  }
+}
+.arrow{
+  margin-right: 5px;
+}
+.good{
+  background: blue;
+}
